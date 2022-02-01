@@ -1,0 +1,7 @@
+body{
+    display: flex;
+}
+.procurar, #conteudo_principal{
+    width: 50vh;
+    height: 100vh;
+}
