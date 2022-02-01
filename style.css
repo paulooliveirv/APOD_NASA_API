@@ -1,7 +1,62 @@
 body{
+    background-image: url('img/background.png');
     display: flex;
+    color: white;
+    overflow: hidden;
+    background-size: 100% 100%;
+}
+.logo_nasa{
+    width: 9rem;
+    height: 8rem;
+    margin-top: 1.4rem;
+    margin-left: 1.6rem;
 }
 .procurar, #conteudo_principal{
-    width: 50vh;
+    width: 50%;
     height: 100vh;
+}
+.campo_envio{
+    display: flex;
+    margin: 22rem 0px 0px 24rem;
+    
+}
+input[type="date"]{
+    margin-top: 21px;
+    width: 18rem;
+    height: 2.8rem;
+    border-radius: 10px 0px 0px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-style: none;
+    background-color: #EFEFEF;
+}
+#lupa_procurar{
+    width: 30px;
+    height: 27px;
+    border-style: none;
+
+    
+    
+}
+
+#botao{
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 21px;
+    height: 2.8rem;
+    color: white;
+    border: none;
+}
+.conteudo_principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+#img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
 }
