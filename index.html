@@ -9,13 +9,13 @@
     <title>APOD-NASA</title>
 </head>
 <body>
-        <nav>
+        <header>
             <img class="logo_nasa" src="./img/logo-nasa.png" alt="" srcset="">
             <span class="titulos">
                 <h1>NASA APOD</h1>
                 <H2>Astronomy Picture of the Day</H2>
             </span>
-        </nav>
+        </header>
     <div class= "procurar" id="procurar">
         <p class="descricao">O Astronomy Picture of the Day é um website mantido pela NASA e pela Universidade Tecnológica de Michigan. De acordo com o website, "cada dia uma imagem ou foto diferente do universo é mostrada, com uma curta explicação escrita por um astrônomo profissional. <br> Vamos tentar? Digite uma data válida abaixo.</p>
         <div class="campo_envio">
@@ -24,11 +24,12 @@
         </div>
     </div>
     <div class= "conteudo_principal" id="conteudo_principal">
-        <h2 id='title'></h2>
-        <img id= 'img' src="" alt="">
-        <iframe id="video" src="" frameborder="0"></iframe>
-        <div><p id="conteudo"></p></div>
+        <h2 id='title' class="titulo"></h2>
+        <img id= 'img' class="img-nasa" src="" alt="">
+        <iframe id="video" class="video-nasa" src="" frameborder="0"></iframe>
+        <div><p id="conteudo" class = "conteudo"></p></div>
         <p id="copy"></p>
+        <input type="button" value="Voltar">
     </div>
     <footer>
         <p>Criado por <a href="">Paulo Reis</a> todos os direitos reservados.&copy;</p>
