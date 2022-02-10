@@ -17,7 +17,7 @@ function apod(){
     const titulo = $('#title');
     const img = $('#img');
     const video = $('#video');
-    const copy = $('#copy');
+    let copy = $("#copy");
     const cont = $('#conteudo');
     const exibirConteudo = document.getElementById('conteudo_principal');
     const mostraBotoes = document.getElementById('procurar')
@@ -29,7 +29,7 @@ function apod(){
         img.attr("src", recebido.url);
         titulo.text(recebido.title);
         cont.text(recebido.explanation);
-        copy.text(recebido.copy);
+        copy.text(recebido.copyright);
 
         if (recebido.media_type === 'image'){
             mostraBotoes.style.display = 'none';

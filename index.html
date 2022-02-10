@@ -9,30 +9,35 @@
     <title>APOD-NASA</title>
 </head>
 <body>
-        <header>
-            <img class="logo_nasa" src="./img/logo-nasa.png" alt="" srcset="">
-            <span class="titulos">
-                <h1>NASA APOD</h1>
-                <H2>Astronomy Picture of the Day</H2>
-            </span>
-        </header>
+    <header>
+        <img class="logo_nasa" src="./img/logo-nasa.png" alt=""srcset="">
+        <span class="titulos">
+            <h1>NASA APOD</h1>
+            <H2>Astronomy Picture of the Day</H2>
+        </span>
+    </header>
     <div class= "procurar" id="procurar">
         <p class="descricao">O Astronomy Picture of the Day é um website mantido pela NASA e pela Universidade Tecnológica de Michigan. De acordo com o website, "cada dia uma imagem ou foto diferente do universo é mostrada, com uma curta explicação escrita por um astrônomo profissional. <br> Vamos tentar? Digite uma data válida abaixo.</p>
         <div class="campo_envio">
-            <input type="date" min="1995-06-16" name="data" id="data"/>
-            <button id="botao"><img id= "lupa_procurar"src="img/lupa-de-pesquisa.png" alt=""></button>
+            <input class= "data" type="date" min="1995-06-16" name="data" id="data"/>
+            <button id="botao" class="button"><img id= "lupa_procurar"src="img/lupa-de-pesquisa.png" alt=""></button>
         </div>
     </div>
     <div class= "conteudo_principal" id="conteudo_principal">
         <h2 id='title' class="titulo"></h2>
+
         <img id= 'img' class="img-nasa" src="" alt="">
+
         <iframe id="video" class="video-nasa" src="" frameborder="0"></iframe>
+
         <div><p id="conteudo" class = "conteudo"></p></div>
+
         <p id="copy"></p>
-        <input type="button" value="Voltar">
+
+        <button id="button-return" type = "reset" class="button-return"> alt=""></button>
     </div>
     <footer>
-        <p>Criado por <a href="">Paulo Reis</a> todos os direitos reservados.&copy;</p>
+        <p>Criado por <a href="https://www.linkedin.com/in/paulo-reis-b424a1217/">Paulo Reis</a> todos os direitos reservados.&copy;</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="script.js"></script>
